@@ -131,7 +131,9 @@ html{
     position: fixed;
     top: 0;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-image: url(../img/gradienteavvera.svg);
+    background-size: cover;
+    opacity: .8;
 }
 
 .menu{
@@ -143,9 +145,10 @@ html{
 
 .menu-item{
     text-align: center;
+    margin: 5rem 0;
 }
 
 .menu-link{
     font-size: 4rem;
-    color: #555;
+    color: #fff;
 }
