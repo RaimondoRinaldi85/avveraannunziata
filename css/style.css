@@ -124,6 +124,44 @@ hr{
     cursor: pointer;
 }
 
+.hamburger-menu span{
+    position: absolute;
+    left: 5rem;
+    width: 10rem;
+    height: 4rem;
+    background-color: #1c0f1f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s;
+}
+
+.change .hamburger-menu:hover span{
+    opacity: 1;
+    visibility: visible;
+}
+
+.hamburger-menu span::before{
+    content: "";
+    position: absolute;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid #1c0f1f;
+    border-bottom: 1rem solid transparent;
+    border-top: 1rem solid transparent;
+    top: 50%;
+    left: -2rem;
+    transform: translateY(-50%);
+}
+
+.change .hamburger-menu{
+    right: 33rem;
+    transition: right .7s;
+}
 .line {
     width: 100%;
     height: .2rem;
@@ -131,15 +169,35 @@ hr{
     box-shadow: 0 .1rem .2rem rgba(0, 0, 0, .2);
 }
 
+/* X */
+
+    .change .line-1{
+    transform:rotate(45deg) translate(0.3rem, 0.8rem);
+}
+    .change .line-2{
+    opacity: 0;
+    visibility: hidden;
+}
+    .change .line-3{
+    transform:rotate(-45deg) translate(0.3rem, -0.8rem);
+}
+
+/* sidebar */
+
 .sidebar{
     width: 40rem;
     height: 100vh;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -40rem;
     background-image: url(../img/gradienteavvera.svg);
     background-size: cover;
-    opacity: .8;
+    opacity: .95;
+    transition: right 0.5s;
+}
+
+.change .sidebar{
+    right: 0;
 }
 
 .menu{
@@ -157,4 +215,147 @@ hr{
 .menu-link{
     font-size: 4rem;
     color: #fff;
+    position: relative;
+}
+.menu-link::before{
+   content: attr(data-content);
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: rgba(0, 0, 0, 0.308);
+   width: 0;
+   overflow: hidden;
+   white-space: nowrap;
+   transition: width .3s ease-in-out;
+}
+
+.menu-link:hover::before{
+    width: 100%;
+}
+
+.social-media{
+    position: absolute;
+    bottom: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media i{
+    font-size: 2.2rem;
+    margin: 3rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.social-media i:hover{
+    background-color: black;
+    color: white;
+}
+
+/* about */
+
+.about-us{
+    width: 100%;
+    padding-bottom: 15rem;
+}
+
+.section-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7rem 0 10rem 0;
+}
+
+.section-heading{
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 6rem;
+}
+
+.underline{
+    width: 12rem;
+    height: .3rem;
+    background-image:url(../img/gradienteavvera.svg);
+}
+
+.services{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(6, 6rem);
+    grid-row-gap: 4rem;
+}
+
+.service{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.service:nth-child(1){
+    grid-column: 4/7;
+    grid-row: 1/3;
+}
+.service:nth-child(2){
+    grid-column: 3/6;
+    grid-row: 3/5;
+}
+.service:nth-child(3){
+    grid-column: 4/7;
+    grid-row: 5/-1;
+}
+.service:nth-child(4){
+    grid-column: 11/14;
+    grid-row: 1/3;
+}
+.service:nth-child(5){
+    grid-column: 12/15;
+    grid-row: 3/5;
+}
+.service:nth-child(6){
+    grid-column: 11/14;
+    grid-row: 5/-1;
+}
+
+.service-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.service-header i{
+    font-size: 4rem;
+    color: #4b4b4b;
+    margin-right: 2rem;
+}
+
+.service-header h3{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.service-text{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.about-us-img-wrapper{
+    grid-column: 7/11;
+    grid-row: 2/6;
+    width: 100%;
+}
+
+.about-us-img-wrapper img{
+    width: 100%;
+    object-fit: cover;
 }
