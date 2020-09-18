@@ -23,6 +23,7 @@ hr{
     background: linear-gradient(#8e499c 0%, #864aa0 53.72%, #604ca1 100%);
     height: 2px;
     border: none;
+    width: 50%;
 }
 
 /* landing */
@@ -45,6 +46,7 @@ hr{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: brightness(50%);
     animation: scale 10s;
 }
 
@@ -222,7 +224,7 @@ hr{
 }
 
 .menu-link{
-    font-size: 4rem;
+    font-size: 3rem;
     color: #fff;
     position: relative;
 }
@@ -240,6 +242,7 @@ hr{
 
 .menu-link:hover::before{
     width: 100%;
+    height: 100%;
 }
 
 .social-media{
@@ -524,7 +527,6 @@ hr{
     border-bottom: 0.2rem dashed #636363;
     margin: 3rem 0;
     padding: 1rem 1rem 1rem 0;
-    font-family: "Muli", serif;
     font-size: 1.6rem;
     color: #4b4b4b;
   }
@@ -545,8 +547,7 @@ hr{
   .input-group label {
     position: absolute;
     left: 0;
-    font-family: "Baloo Da 2", serif;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #4b4b4b;
     text-transform: uppercase;
     pointer-events: none;
@@ -554,16 +555,11 @@ hr{
   }
   
   .input-label {
-    bottom: 3rem;
+    bottom: 7rem;
   }
   
   .message {
-    bottom: 6rem;
-  }
-  
-  .field:focus ~ label {
-    transform: translateY(-3rem);
-    font-size: 1.2rem;
+    bottom: 10rem;
   }
   
   .submit-btn {
@@ -573,7 +569,6 @@ hr{
     color: #fff;
     border: none;
     margin-top: 2rem;
-    font-family: "Muli", serif;
     font-size: 2rem;
     font-weight: 300;
     text-transform: uppercase;
@@ -583,7 +578,7 @@ hr{
     box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
   }
 
-
+/* footer */
   
   .footer {
     width: 100%;
