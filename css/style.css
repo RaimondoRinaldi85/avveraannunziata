@@ -26,6 +26,80 @@ hr{
     width: 50%;
 }
 
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  background: url(../img/gradienteavvera.svg);
+  background-size: cover;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav i{
+  visibility: hidden;
+  position: absolute;
+  font-size: 2rem;
+  color: #e2e2e2;
+  top: 1rem;
+  right: 2rem;
+}
+
+.nav-logo{
+  font-size:2rem ;
+  color: #eee;
+}
+
+
+.nav-items ul{
+  display: flex;
+}
+
+.nav-items ul li a{
+  margin-right: 3rem;
+  font-size: 1.5rem;
+  color: white;
+  padding: 1rem;
+}
+
+.nav-items ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.205);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* landing */
 
 .header{
@@ -116,7 +190,7 @@ hr{
     }
 }
 
-/* menu */
+/* menu
 
 .hamburger-menu {
     width: 3rem;
@@ -177,7 +251,7 @@ hr{
     box-shadow: 0 .1rem .2rem rgba(0, 0, 0, .2);
 }
 
-/* X */
+/* X 
 
     .change .line-1{
     transform:rotate(45deg) translate(0.3rem, 0.8rem);
@@ -192,7 +266,7 @@ hr{
     background: white;
 }
 
-/* sidebar */
+/* sidebar 
 
 .sidebar{
     width: 40rem;
@@ -271,6 +345,8 @@ hr{
     background-color: black;
     color: white;
 }
+
+*/
 
 /* about */
 
@@ -649,6 +725,7 @@ hr{
   }
   
   @media (max-width: 1400px) {
+
     .banner h1 {
       font-size: 6rem;
       line-height: 7rem;
@@ -662,10 +739,6 @@ hr{
       width: 20rem;
       height: 5rem;
       font-size: 1.6rem;
-    }
-  
-    .menu-link {
-      font-size: 3rem;
     }
   
     .service:nth-child(1) {
@@ -723,6 +796,23 @@ hr{
   }
   
   @media (max-width: 1000px) {
+
+    .nav-items{
+      display: none;
+      visibility: hidden;
+    }
+    .nav-logo{
+     font-size: 1.7rem;
+    }
+
+    nav{
+      display: block;
+    }
+
+    nav i{
+      visibility: visible;
+    }
+
     .banner h1 {
       font-size: 5rem;
       line-height: 6rem;
@@ -816,15 +906,6 @@ hr{
   @media (max-width: 500px) {
     html {
       font-size: 45%;
-    }
-  
-    .sidebar {
-      width: 100%;
-      right: -100%;
-    }
-  
-    .change .hamburger-menu {
-      right: 38rem;
     }
   
     .service {
