@@ -1,3 +1,5 @@
-width: 1920px;
-height: 133px;
+
+
+
+
 background: linear-gradient(#8e499c 0%, #864aa0 53.72%, #604ca1 100%);
