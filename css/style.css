@@ -27,6 +27,17 @@ hr{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 nav{
   display: flex;
   justify-content: space-evenly;
@@ -62,6 +73,7 @@ nav .nav-toggle i{
   font-size: 1.5rem;
   color: white;
   padding: 1rem;
+  margin-right: 3rem;
 }
 
 .nav-items ul li a:hover {
@@ -80,32 +92,15 @@ nav .nav-toggle i{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* landing */
 .header{
    width: 100%;
-   height: 100vh; 
+   height: 100vh;
    position: relative;
    perspective: 100rem;
    overflow: hidden;
+   border-bottom-left-radius: 1.5rem;
+   border-bottom-right-radius: 1.5rem;
 }
 
 .img-wrapper{
@@ -167,6 +162,7 @@ nav .nav-toggle i{
     background-size: cover;
     color: white;
     border: none;
+    margin-right: 2rem;
     font-size: 2rem;
     text-transform: uppercase;
     text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
@@ -199,7 +195,7 @@ nav .nav-toggle i{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 7rem 0 10rem 0;
+    padding: 7rem 0 3rem 0;
 }
 
 .section-heading{
@@ -214,14 +210,13 @@ nav .nav-toggle i{
     background-image:url(../img/gradienteavvera.svg);
 }
 
-
 .description{
   padding: 3rem;
   margin: 0 5rem 5rem 5rem;
-  text-align: center;
 }
 
 .description h2 {
+  text-align: center;
  font-weight: 800;
  font-size: 2.5rem;
  margin-bottom: 2rem;
@@ -229,12 +224,8 @@ nav .nav-toggle i{
 
 .description p{
   font-size: 1.5rem;
+  line-height: 2rem;
 }
-
-
-
-
-
 
 .services{
     width: 100%;
@@ -253,26 +244,36 @@ nav .nav-toggle i{
 .service:nth-child(1){
     grid-column: 4/7;
     grid-row: 1/3;
+    color: rebeccapurple;    
 }
 .service:nth-child(2){
     grid-column: 3/6;
     grid-row: 3/5;
+    color: rebeccapurple;
 }
+
 .service:nth-child(3){
     grid-column: 4/7;
     grid-row: 5/-1;
+    color: rebeccapurple;
 }
 .service:nth-child(4){
     grid-column: 11/14;
     grid-row: 1/3;
+    color: rebeccapurple;
+    text-align: right;
 }
 .service:nth-child(5){
     grid-column: 12/15;
     grid-row: 3/5;
+    color: rebeccapurple;
+    text-align: right;
 }
 .service:nth-child(6){
     grid-column: 11/14;
     grid-row: 5/-1;
+    color: rebeccapurple;
+    text-align: right;
 }
 
 .service-header{
@@ -309,13 +310,14 @@ nav .nav-toggle i{
 .about-us-img-wrapper img{
     width: 100%;
     object-fit: fill;
-    padding: 4rem;
+    padding: 3rem;
 }
 /* end service */
 
 /* contatti */
 .contact {
-    width: 100%;
+    width: 99%;
+    margin: auto;
     height: 100vh;
     background: url(../img/bgmon.jpg);
     background-size: cover;
@@ -323,6 +325,8 @@ nav .nav-toggle i{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 1.5rem;
+    
   }
   
   .contact-wrapper {
@@ -431,9 +435,9 @@ nav .nav-toggle i{
   justify-content: center;
   align-items: center;
   padding: 0 5rem 20rem 5rem;
-  background-color: #17181c;
+
   background-position-x: left;
-  color: white;
+  color: black;
 }
 
 .cards-wrapper{
@@ -444,6 +448,7 @@ nav .nav-toggle i{
 }
 
 .card{
+  text-align: center;
   width: 37rem;
   height: 45rem;
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
@@ -470,11 +475,10 @@ nav .nav-toggle i{
 
 .card-info{
   position: absolute;
-  bottom: 2rem;
+  top: 3rem;
   padding: 2rem;
   text-shadow: 0 .2rem .5rem rgba(0, 0, 0, .2);
 }
-
 
 .card-info h2{
   font-size: 2.5rem;
@@ -491,14 +495,13 @@ nav .nav-toggle i{
 }
 .card-info p{
   font-size: 1.5rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
   font-weight: 300;
   color: #eee;
-  width: 80%;
   margin-bottom: 2rem;
 }
 
-.card-info button{
+.card button{
   width: 10rem;
   height: 3rem;
   background-image: url(../img/gradienteavvera.svg);
@@ -510,6 +513,9 @@ nav .nav-toggle i{
   border-radius: .3rem;
   box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
   cursor: pointer;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
 }
 
 /* end cards */
@@ -573,10 +579,7 @@ nav .nav-toggle i{
   /* -----------------------media----------------------- */
 
   @media (max-width: 1500px) {
-    .about-us-img-wrapper {
-      grid-row: 3 / -1;
-    }
-  
+   
     .card {
       width: 34rem;
     }
