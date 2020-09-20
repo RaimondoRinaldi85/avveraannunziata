@@ -100,7 +100,6 @@ nav .nav-toggle i{
 
 
 /* landing */
-
 .header{
    width: 100%;
    height: 100vh; 
@@ -188,167 +187,9 @@ nav .nav-toggle i{
         opacity:1;
     }
 }
+/* end landing */
 
-/* menu
-
-.hamburger-menu {
-    width: 3rem;
-    height: 3rem;
-    position: fixed;
-    top: 5rem;
-    right: 5rem;
-    z-index: 200;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    cursor: pointer;
-}
-
-.hamburger-menu span{
-    position: absolute;
-    left: 5rem;
-    width: 10rem;
-    height: 4rem;
-    background-color: #1c0f1f;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    letter-spacing: .1rem;
-    opacity: 0;
-    visibility: hidden;
-    transition: all ease-in 2s;
-}
-
-.change .hamburger-menu:hover span{
-    opacity: 1;
-    visibility: visible;
-}
-
-.hamburger-menu span::before{
-    content: "";
-    position: absolute;
-    border-left: 1rem solid transparent;
-    border-right: 1rem solid #1c0f1f;
-    border-bottom: 1rem solid transparent;
-    border-top: 1rem solid transparent;
-    top: 50%;
-    left: -2rem;
-    transform: translateY(-50%);
-}
-
-.change .hamburger-menu{
-    right: 33rem;
-    transition: right .7s;
-    
-}
-.line {
-    width: 100%;
-    height: .2rem;
-    background: linear-gradient(#8e499c 0%, #864aa0 53.72%, #604ca1 100%);
-    box-shadow: 0 .1rem .2rem rgba(0, 0, 0, .2);
-}
-
-/* X 
-
-    .change .line-1{
-    transform:rotate(45deg) translate(0.3rem, 0.8rem);
-    background: white;
-}
-    .change .line-2{
-    opacity: 0;
-    visibility: hidden;
-}
-    .change .line-3{
-    transform:rotate(-45deg) translate(0.3rem, -0.8rem);
-    background: white;
-}
-
-/* sidebar 
-
-.sidebar{
-    width: 40rem;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: -40rem;
-    background-image: url(../img/gradienteavvera.svg);
-    background-size: cover;
-    opacity: .95;
-    transition: right 0.5s;
-    z-index: 99;
-}
-
-.change .sidebar{
-    right: 0;
-}
-
-.menu{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.menu-item{
-    text-align: center;
-    margin: 5rem 0;
-}
-
-.menu-link{
-    font-size: 3rem;
-    color: #fff;
-    position: relative;
-}
-.menu-link::before{
-   content: attr(data-content);
-   position: absolute;
-   top: 0;
-   left: 0;
-   background-color: rgba(0, 0, 0, 0.308);
-   width: 0;
-   overflow: hidden;
-   white-space: nowrap;
-   transition: width .3s ease-in-out;
-}
-
-.menu-link:hover::before{
-    width: 100%;
-    height: 100%;
-}
-
-.social-media{
-    position: absolute;
-    bottom: 3rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.social-media i{
-    font-size: 2.2rem;
-    margin: 3rem;
-    width: 4.5rem;
-    height: 4.5rem;
-    background-color: white;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    transition: background-color 0.3s;
-}
-
-.social-media i:hover{
-    background-color: black;
-    color: white;
-}
-
-*/
-
-/* about */
-
+/* service */
 .about-us{
     width: 100%;
     padding-bottom: 15rem;
@@ -372,6 +213,28 @@ nav .nav-toggle i{
     height: .3rem;
     background-image:url(../img/gradienteavvera.svg);
 }
+
+
+.description{
+  padding: 3rem;
+  margin: 0 5rem 5rem 5rem;
+  text-align: center;
+}
+
+.description h2 {
+ font-weight: 800;
+ font-size: 2.5rem;
+ margin-bottom: 2rem;
+}
+
+.description p{
+  font-size: 1.5rem;
+}
+
+
+
+
+
 
 .services{
     width: 100%;
@@ -446,135 +309,17 @@ nav .nav-toggle i{
 .about-us-img-wrapper img{
     width: 100%;
     object-fit: fill;
+    padding: 4rem;
 }
-
-/* card */
-
-.team{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 5rem 20rem 5rem;
-    background-color: silver;
-}
-
-.cards-wrapper{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 2rem;
-    width: 100%;
-}
-
-.card{
-    width: 37rem;
-    height: 45rem;
-    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
-    border-radius: 0.5rem;
-    position: relative;
-}
-
-.card-img-wrapper{
-    width: 100%;
-    height: 100%;
-    background-color: #262626;
-    border-radius: 0.5rem;
-}
-
-.card-img-wrapper img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-    opacity: 0.8;
-    border-radius: 0.5rem;
-    transition: opacity .3s;
-}
-
-.card:hover .card-img-wrapper img{
-    opacity: .5;
-}
-
-.card-info{
-    position: absolute;
-    bottom: 0;
-    padding: 2rem;
-    text-shadow: 0 .2rem .5rem rgba(0, 0, 0, .2);
-    opacity: 0;
-    visibility: hidden;
-    transition: all .3s;
-}
-
-.card:hover .card-info {
-    bottom: 2rem;
-    opacity: 1;
-    visibility: visible;
-}
-
-.card-info h2{
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    font-weight: 300;
-    color: #eee;
-}
-
-.card-info h3{
-    font-size: 2rem;
-    font-weight: 500;
-    color: red;
-    margin-bottom: 1rem;
-}
-.card-info p{
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    font-weight: 300;
-    color: #eee;
-    width: 80%;
-    margin-bottom: 2rem;
-}
-
-.card-info button{
-    width: 10rem;
-    height: 3rem;
-    background-image: url(../img/gradienteavvera.svg);
-    background-size: cover;
-    color: white;
-    border: none;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    border-radius: .3rem;
-    box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
-}
-
-.avvera-info {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 37rem;
-  height: 45rem;
-  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
-  border-radius: 0.5rem;
-  padding: 3rem;
-  margin-top: 10rem;
-}
-
-.avvera-info h1{
-  font-size: 2.5rem;
-  color: black;
-}
-.avvera-info p{
-  font-size: 1.5rem;
-  font-weight: 300;
-  color: black;
-  margin-top: 2rem;
-}
+/* end service */
 
 /* contatti */
-
 .contact {
     width: 100%;
     height: 100vh;
-    background-color: #272727;
+    background: url(../img/bgmon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -604,7 +349,7 @@ nav .nav-toggle i{
     font-size: 6rem;
     font-weight: 300;
     color: #272727;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     text-align: center;
   }
   
@@ -676,10 +421,104 @@ nav .nav-toggle i{
     text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
     box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
   }
+  /* end contatti */
+
+  /* card */
+
+.team{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5rem 20rem 5rem;
+  background-color: #17181c;
+  background-position-x: left;
+  color: white;
+}
+
+.cards-wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.card{
+  width: 37rem;
+  height: 45rem;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.card-img-wrapper{
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  border-radius: 0.5rem;
+}
+
+.card-img-wrapper img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  opacity: 0.5;
+  border-radius: 0.5rem;
+  transition: opacity .3s;
+}
+
+.card-info{
+  position: absolute;
+  bottom: 2rem;
+  padding: 2rem;
+  text-shadow: 0 .2rem .5rem rgba(0, 0, 0, .2);
+}
+
+
+.card-info h2{
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-weight: 300;
+  color: #eee;
+}
+
+.card-info h3{
+  font-size: 2rem;
+  font-weight: 500;
+  color: red;
+  margin-bottom: 1rem;
+}
+.card-info p{
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+  color: #eee;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.card-info button{
+  width: 10rem;
+  height: 3rem;
+  background-image: url(../img/gradienteavvera.svg);
+  background-size: cover;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  border-radius: .3rem;
+  box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+/* end cards */
+
+
 
 /* footer */
-  
   .footer {
+    border-top: 1px solid purple;
     width: 100%;
     height: 15rem;
     background-color: #17181b;
@@ -711,6 +550,8 @@ nav .nav-toggle i{
     font-size: 2rem;
     color: #a7a7a7;
   }
+  /* end footer */
+
   
   .scroll-btn {
     position: fixed;
@@ -728,6 +569,9 @@ nav .nav-toggle i{
     border-radius: 0.3rem;
   }
   
+
+  /* -----------------------media----------------------- */
+
   @media (max-width: 1500px) {
     .about-us-img-wrapper {
       grid-row: 3 / -1;
@@ -800,7 +644,7 @@ nav .nav-toggle i{
       margin-top: 4rem;
     }
   
-    .card {
+    .card, .avvera-info {
       margin-bottom: 8rem;
     }
   
