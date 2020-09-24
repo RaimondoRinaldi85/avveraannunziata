@@ -27,36 +27,26 @@ hr{
     width: 50%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /*nav*/
 nav {
-background-image: url(../img/gradienteavvera.svg);
-background-size: cover;
-background-repeat: no-repeat;
+  background-image: url(../img/gradienteavvera.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
-  padding: 15px;
+  padding: 0;
   position: sticky;
   top: 0;
   z-index: 999;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.301);
 }
 
 nav p {
 	color: #ffffff;
-  margin: .5rem;
-  font-size: 1.7rem;
+  margin: 1.5rem;
+  font-size: 1.9rem;
 	letter-spacing: .1rem;
 	text-transform: uppercase;
 }
@@ -108,7 +98,7 @@ ul li {
 }
 
 ul li a {
-	color: #000000;
+	color: #ffffff;
 	position: relative;
   font-size: 1.5rem;
 }
@@ -267,6 +257,7 @@ background-color: rgba(0, 0, 0, 0.075);
 .service{
     width: 100%;
     margin-bottom: 2rem;
+    overflow-x: hidden;
 }
 
 .service:nth-child(1){
@@ -418,7 +409,7 @@ fieldset {
 	cursor:pointer;
 	width:100%;
 	border:none;
-	background:#0CF;
+	background: url(../img/gradienteavvera.svg);
 	color:#FFF;
 	margin:0 0 5px;
 	padding:10px;
@@ -426,7 +417,7 @@ fieldset {
 }
 
 #contact button[type="submit"]:hover {
-	background:#09C;
+	background:rgba(0, 0, 0, 0.822);
 	-webkit-transition:background 0.3s ease-in-out;
 	-moz-transition:background 0.3s ease-in-out;
 	transition:background-color 0.3s ease-in-out;
@@ -765,7 +756,7 @@ fieldset {
       }
       
       ul {
-        background-color: #fff;
+        background: url(../img/gradienteavvera.svg);
         box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
         flex-direction: column;
         text-align: center;
@@ -780,6 +771,7 @@ fieldset {
       
       ul.show {
         transform: translateX(0);
+        background: url(../img/gradienteavvera.svg);
       }
       
       ul li {
@@ -820,23 +812,30 @@ fieldset {
     .footer {
       height: 18rem;
     }
+
+    .banner button{
+      margin-bottom: 1.2rem;
+    }  
   }
-  
 
   /* ObserverJS */
 
 .anim{
   opacity: 0;
 }
+
 .animup{
   opacity: 0;
 }
+
 .animright{
   opacity: 0;
 }
+
 .animation{
   opacity: 0;
 }
+
 @keyframes anim1 {
   from{
       transform: translateX(-100px);
@@ -847,6 +846,7 @@ fieldset {
       opacity: 1;
   }
 }
+
 @keyframes animup {
   from{
       
@@ -857,6 +857,7 @@ fieldset {
       opacity: 1;
   }
 }
+
 @keyframes animright {
   from{
       transform: translateX(100px);
