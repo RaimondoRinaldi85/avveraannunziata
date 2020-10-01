@@ -32,6 +32,7 @@ hr{
   flex-direction: column;
   align-items: center;
   padding: 7rem 0 3rem 0;
+  margin: 0 4rem;
 }
 
 .section-heading{
@@ -45,6 +46,7 @@ hr{
   font-size: 2rem;
   font-weight: 300;
   font-weight: 800;
+  text-align: center;
 }
 
 .underline{
@@ -135,14 +137,7 @@ background-color: rgba(0, 0, 0, 0.075);
 }
 /*end nav*/
 
-
 /*banner undernav*/
-
-
-
-
-
-
 .banner-under-nav{
   width: 100%;
   height: auto;
@@ -157,23 +152,17 @@ background-color: rgba(0, 0, 0, 0.075);
 .banner-under-nav h1{
   font-size: 2rem;
   margin: 2rem 1rem 0 1rem;
+  opacity: 0;
+  animation: moveBanner 1s 1s forwards;
 }
+
 .banner-under-nav h3{
   font-size: 1.7rem;
   margin: 1rem 1rem 1rem 1rem;
+  opacity: 0;
+  animation: moveBanner 1s 1s forwards;
 }
-
-
-
-
 /* end banner undernav*/
-
-
-
-
-
-
-
 
 /* landing */
 .header{
@@ -386,9 +375,9 @@ background-color: rgba(0, 0, 0, 0.075);
 .about-us-img-wrapper img{
     width: 100%;
     object-fit: fill;
-    padding: 3rem;
+    padding: 2rem;
 }
-/* end service */
+  /* end service */
 
   /* Prestiti */
 
@@ -400,37 +389,53 @@ background-color: rgba(0, 0, 0, 0.075);
     color: white;
   }
   
-.prestiti-wrapper{
+  .prestiti-wrapper{
   display: flex;
   margin: 4rem 0;
   justify-content: space-evenly;
 }
 
-.prestiti-target{
+  .prestiti-target{
   text-align: center;
 }
-.prestiti-target i{
+
+  .prestiti-target i{
   font-size: 4rem;
   margin-bottom: 2rem;
   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   /* end prestiti */
+  /*firma*/
 
-/* contatti */ 
+.firma{
+    padding: 0 5rem 20rem 5rem;
+    color: rebeccapurple;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*end firma*/
+  /* contatti */ 
 .contact {
   background: url(../img/bgmon.jpg);
   background-size: cover;
