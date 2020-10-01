@@ -27,6 +27,33 @@ hr{
     width: 50%;
 }
 
+.section-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7rem 0 3rem 0;
+}
+
+.section-heading{
+  font-size: 5rem;
+  font-weight: 300;
+  margin: 2rem;
+  font-weight: 800;
+}
+
+.section-heading-h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  font-weight: 800;
+}
+
+.underline{
+  width: 12rem;
+  height: .3rem;
+  background-image:url(../img/gradienteavvera.svg);
+}
+
+
 /*nav*/
 nav {
   background-image: url(../img/gradienteavvera.svg);
@@ -108,6 +135,46 @@ background-color: rgba(0, 0, 0, 0.075);
 }
 /*end nav*/
 
+
+/*banner undernav*/
+
+
+
+
+
+
+.banner-under-nav{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  color: rebeccapurple;
+  background-color: rgba(0, 0, 0, 0.274);
+}
+
+.banner-under-nav h1{
+  font-size: 2rem;
+  margin: 2rem 1rem 0 1rem;
+}
+.banner-under-nav h3{
+  font-size: 1.7rem;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+
+
+
+/* end banner undernav*/
+
+
+
+
+
+
+
+
 /* landing */
 .header{
    width: 100%;
@@ -115,8 +182,9 @@ background-color: rgba(0, 0, 0, 0.075);
    position: relative;
    perspective: 100rem;
    overflow: hidden;
-   border-bottom-left-radius: 1.5rem;
-   border-bottom-right-radius: 1.5rem;
+   border-bottom-left-radius: 1rem;
+   border-bottom-right-radius: 1rem;
+   box-shadow: rebeccapurple;
 }
 
 .img-wrapper{
@@ -129,7 +197,7 @@ background-color: rgba(0, 0, 0, 0.075);
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(50%);
+    filter: brightness(70%);
     animation: scale 10s;
 }
 
@@ -144,7 +212,7 @@ background-color: rgba(0, 0, 0, 0.075);
 
 .banner{
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 15%;
 }
 
@@ -207,42 +275,25 @@ background-color: rgba(0, 0, 0, 0.075);
     padding-bottom: 15rem;
 }
 
-.section-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 7rem 0 3rem 0;
-}
-
-.section-heading{
-    font-size: 5rem;
-    font-weight: 300;
-    margin: 2rem;
-    font-weight: 800;
-}
-
-.underline{
-    width: 12rem;
-    height: .3rem;
-    background-image:url(../img/gradienteavvera.svg);
-}
-
 .description{
   padding: 3rem;
   margin: 0 5rem 5rem 5rem;
+  color:  #384e65;
 }
 
 .description h2 {
   text-align: center;
  font-weight: 800;
  font-size: 2.5rem;
- margin-bottom: 2rem;
+ margin-bottom: 3rem;
 }
 
 .description p{
-  font-size: 1.5rem;
+  text-align: center;
+  font-size: 1.8rem;
   line-height: 2rem;
-  color: #17181b;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  
 }
 
 .services{
@@ -257,41 +308,47 @@ background-color: rgba(0, 0, 0, 0.075);
 .service{
     width: 100%;
     margin-bottom: 2rem;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .service:nth-child(1){
     grid-column: 4/7;
     grid-row: 1/3;
-    color: rebeccapurple;    
+    color: rebeccapurple;   
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); 
 }
 .service:nth-child(2){
     grid-column: 3/6;
     grid-row: 3/5;
     color: rebeccapurple;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); 
 }
 
 .service:nth-child(3){
     grid-column: 4/7;
     grid-row: 5/-1;
     color: rebeccapurple;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); 
 }
 .service:nth-child(4){
     grid-column: 11/14;
     grid-row: 1/3;
     color: rebeccapurple;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); 
     text-align: right;
 }
 .service:nth-child(5){
     grid-column: 12/15;
     grid-row: 3/5;
     color: rebeccapurple;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); 
     text-align: right;
 }
 .service:nth-child(6){
     grid-column: 11/14;
     grid-row: 5/-1;
     color: rebeccapurple;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); 
     text-align: right;
 }
 
@@ -333,9 +390,48 @@ background-color: rgba(0, 0, 0, 0.075);
 }
 /* end service */
 
+  /* Prestiti */
+
+  .prestiti{
+    padding: 0 5rem 20rem 5rem;
+    background-image: url(../img/gradienteavvera.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  
+.prestiti-wrapper{
+  display: flex;
+  margin: 4rem 0;
+  justify-content: space-evenly;
+}
+
+.prestiti-target{
+  text-align: center;
+}
+.prestiti-target i{
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* end prestiti */
+
 /* contatti */ 
 .contact {
-
   background: url(../img/bgmon.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -356,9 +452,10 @@ background-color: rgba(0, 0, 0, 0.075);
 }
 
 #contact {
-	background:#F9F9F9;
+  background:#F9F9F9;
 	padding:25px;
 	margin:50px 0;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);;
 }
 
 #contact h3 {
@@ -432,99 +529,7 @@ fieldset {
 
   /*end contatti */
 
-  /* card */
 
-.team{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 5rem 20rem 5rem;
-  background-image: url(../img/cards.jpg);
-  background-position-x: left;
-  background-blend-mode: multiply;
-  color: black;
-}
-
-.cards-wrapper{
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 2rem;
-  width: 100%;
-}
-
-.card{
-  text-align: center;
-  width: 37rem;
-  height: 45rem;
-  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
-  border-radius: 0.5rem;
-  position: relative;
-}
-
-.card-img-wrapper{
-  width: 100%;
-  height: 100%;
-  background-color: #262626;
-  border-radius: 0.5rem;
-}
-
-.card-img-wrapper img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
-  opacity: 0.5;
-  border-radius: 0.5rem;
-  transition: opacity .3s;
-}
-
-.card-info{
-  position: absolute;
-  top: 3rem;
-  padding: 2rem;
-  text-shadow: 0 .2rem .5rem rgba(0, 0, 0, .2);
-}
-
-.card-info h2{
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  font-weight: 300;
-  color: #eee;
-}
-
-.card-info h3{
-  font-size: 2rem;
-  font-weight: 500;
-  color: red;
-  margin-bottom: 1rem;
-}
-.card-info p{
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 300;
-  color: #eee;
-  margin-bottom: 2rem;
-}
-
-.card button{
-  width: 10rem;
-  height: 3rem;
-  background-image: url(../img/gradienteavvera.svg);
-  background-size: cover;
-  color: white;
-  border: none;
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  border-radius: .3rem;
-  box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-}
-
-/* end cards */
 
 
 
@@ -579,6 +584,7 @@ fieldset {
     color: #fff;
     box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.2);
     border-radius: 0.3rem;
+    
   }
   
 
@@ -586,11 +592,7 @@ fieldset {
 
   @media (max-width: 1500px) {
    
-    .card {
-      width: 34rem;
-    }
-  
-    .contact-wrapper {
+     .contact-wrapper {
       width: 80%;
       height: 65rem;
     }
@@ -647,16 +649,6 @@ fieldset {
       padding-bottom: 5rem;
     }
   
-    .cards-wrapper {
-      flex-direction: column;
-      align-items: center;
-      margin-top: 4rem;
-    }
-  
-    .card, .avvera-info {
-      margin-bottom: 8rem;
-    }
-  
     .contact-wrapper {
       width: 90%;
       height: 55rem;
@@ -673,7 +665,15 @@ fieldset {
   
   @media (max-width: 1000px) {
 
-    
+    .prestiti-wrapper{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .prestiti-target{
+      margin: 3rem 0;
+    }
+
     .banner h1 {
       font-size: 5rem;
       line-height: 6rem;
