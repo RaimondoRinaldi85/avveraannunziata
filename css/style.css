@@ -17,7 +17,15 @@
 
 html{
     font-size: 62.5%;
-  
+    
+}
+
+.container{
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/html.png);
+  background-size: cover;
+ 
 }
 
 hr{
@@ -82,7 +90,7 @@ nav p {
 
 .burger {
   background-color: #864aa0;
-	border: 1px solid rgba(255, 255, 255, 0.267);
+	border: 1px solid rgba(255, 255, 255, 0);
 	cursor: pointer;
 	display: none;
 	font-size: 2.2rem;
@@ -90,7 +98,8 @@ nav p {
 	padding: 0;
   outline: none;
 	height: 3rem;
-	width: 3rem;
+  width: 3rem;
+  right: 2rem;
 }
 
 .burger:active {
@@ -146,7 +155,6 @@ background-color: rgba(0, 0, 0, 0.075);
   justify-items: center;
   justify-content: center;
   color: rebeccapurple;
-  background-color: rgba(0, 0, 0, 0.274);
 }
 
 .banner-under-nav h1{
@@ -262,12 +270,16 @@ background-color: rgba(0, 0, 0, 0.075);
 .about-us{
     width: 100%;
     padding-bottom: 15rem;
+    color: rebeccapurple;
 }
 
 .description{
   padding: 3rem;
   margin: 0 5rem 5rem 5rem;
   color:  #384e65;
+}
+.description h2{
+  color: rebeccapurple;
 }
 
 .description h2 {
@@ -411,29 +423,6 @@ background-color: rgba(0, 0, 0, 0.075);
     padding: 0 5rem 20rem 5rem;
     color: rebeccapurple;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   /*end firma*/
   /* contatti */ 
 .contact {
@@ -809,7 +798,7 @@ fieldset {
     html {
       font-size: 45%;
     }
-  
+    
     .service {
       width: 30rem;
     }
