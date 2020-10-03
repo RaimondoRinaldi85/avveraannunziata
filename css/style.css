@@ -142,21 +142,19 @@ ul li:hover {
 background-color: rgba(0, 0, 0, 0.075);
 }
 /*end nav*/
-
 /*banner undernav*/
 .banner-under-nav{
   width: 100%;
   height: auto;
   text-align: center;
+  justify-content: space-evenly;
   display: flex;
-  justify-items: center;
-  justify-content: center;
-  color: rebeccapurple;
 }
 
 .banner-under-nav h1{
   font-size: 2rem;
   margin: 2rem 1rem 0 1rem;
+  color: rebeccapurple;
   opacity: 0;
   animation: moveBanner 1s 1s forwards;
 }
@@ -164,9 +162,26 @@ background-color: rgba(0, 0, 0, 0.075);
 .banner-under-nav h3{
   font-size: 1.7rem;
   margin: 1rem 1rem 1rem 1rem;
+  color: rebeccapurple;
   opacity: 0;
   animation: moveBanner 1s 1s forwards;
 }
+
+.social-nav {
+  font-size: 2rem;
+  margin: auto 1rem;
+}
+
+.social-nav a{
+  margin-right: 3rem;
+}
+
+.social-nav i, a{
+   color: #384e65;
+   padding: 1rem;
+   
+}
+
 /* end banner undernav*/
 
 /* landing */
@@ -396,6 +411,7 @@ background-color: rgba(0, 0, 0, 0.075);
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
+    overflow: hidden;
   }
   
   .prestiti-wrapper{
@@ -798,6 +814,16 @@ fieldset {
     .submit-btn {
       width: 35rem;
     }
+
+
+    .modal-body {
+      overflow: hidden;
+    }
+
+    .text{
+      display: none;
+    }
+
   }
   
   @media (max-width: 500px) {
