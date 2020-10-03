@@ -14,6 +14,7 @@
 
 html{
     font-size: 62.5%;
+    overflow-x: hidden;
     
 }
 
@@ -181,9 +182,7 @@ background-color: rgba(0, 0, 0, 0.075);
    padding: 1rem;
    
 }
-
 /* end banner undernav*/
-
 /* landing */
 .header{
    width: 100%;
@@ -277,7 +276,6 @@ background-color: rgba(0, 0, 0, 0.075);
     }
 }
 /* end landing */
-
 /* service */
 .about-us{
     width: 100%;
@@ -402,9 +400,7 @@ background-color: rgba(0, 0, 0, 0.075);
     padding: 2rem;
 }
   /* end service */
-
   /* Prestiti */
-
   .prestiti{
     padding: 0 5rem 20rem 5rem;
     background-image: url(../img/gradienteavvera.svg);
@@ -431,7 +427,6 @@ background-color: rgba(0, 0, 0, 0.075);
 }
   /* end prestiti */
   /*firma*/
-
 .firma{
     padding: 0 5rem 20rem 5rem;
     color: rebeccapurple;
@@ -442,6 +437,120 @@ background-color: rgba(0, 0, 0, 0.075);
     background-position-y: center;
 }
   /*end firma*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /* contatti */ 
 .contact {
   background: url(../img/bgmon.jpg);
@@ -453,10 +562,9 @@ background-color: rgba(0, 0, 0, 0.075);
 }
 
 .container-contatti {
-  justify-content: center;
+  justify-content: right;
 	max-width:400px;
 	width:100%;
-	margin:0 auto;
   position:relative;
 	padding:3rem;
   box-sizing:border-box;
@@ -544,6 +652,115 @@ fieldset {
 	border:1px solid #999;
 }
   /*end contatti */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /* footer */
   .footer {
     
