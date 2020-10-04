@@ -27,7 +27,8 @@ html{
 }
 
 hr{
-    background: linear-gradient(#8e499c 0%, #864aa0 53.72%, #604ca1 100%);
+    /* background: linear-gradient(#8e499c 0%, #864aa0 53.72%, #604ca1 100%); */
+    background: white;
     height: 2px;
     border: none;
     width: 50%;
@@ -156,16 +157,12 @@ background-color: rgba(0, 0, 0, 0.075);
   font-size: 2rem;
   margin: 2rem 1rem 0 1rem;
   color: rebeccapurple;
-  opacity: 0;
-  animation: moveBanner 1s 1s forwards;
 }
 
 .banner-under-nav h3{
   font-size: 1.7rem;
   margin: 1rem 1rem 1rem 1rem;
   color: rebeccapurple;
-  opacity: 0;
-  animation: moveBanner 1s 1s forwards;
 }
 
 .social-nav {
@@ -178,8 +175,9 @@ background-color: rgba(0, 0, 0, 0.075);
 }
 
 .social-nav i, a{
-   color: #384e65;
+   color: rebeccapurple;
    padding: 1rem;
+   cursor: pointer;
    
 }
 /* end banner undernav*/
@@ -218,6 +216,7 @@ background-color: rgba(0, 0, 0, 0.075);
     }
 }
 
+/*
 .banner{
     position: absolute;
     top: 25%;
@@ -233,7 +232,27 @@ background-color: rgba(0, 0, 0, 0.075);
     text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.4);
     opacity: 0;
     animation: moveBanner 1s .5s forwards;
+} */
+
+.banner{
+  position: absolute;
+  top: 25%;
+  left: 15%;
 }
+
+.banner h1{
+  font-size: 7rem;
+  font-weight: 400;
+  color: white;
+  width: 100%;
+  letter-spacing: .2rem;
+  text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  animation: moveBanner 1s .5s forwards;
+}
+
+
+
 
 .banner p{
     font-size: 2rem;
@@ -258,8 +277,9 @@ background-color: rgba(0, 0, 0, 0.075);
     font-size: 2rem;
     text-transform: uppercase;
     text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.301);
     cursor: pointer;
+    border-radius: 2.5rem;
     opacity: 0;
     animation: moveBanner 1s 1s forwards;
 }
@@ -429,7 +449,7 @@ background-color: rgba(0, 0, 0, 0.075);
   /*firma*/
 .firma{
     padding: 0 5rem 20rem 5rem;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.521);
     background-image: url(../img/firma.png);
     background-size: cover;
@@ -558,7 +578,7 @@ background-color: rgba(0, 0, 0, 0.075);
   background-repeat: no-repeat;
   background-position-y: bottom;
   height: 100%;
-  display: flex;
+  color: white;
 }
 
 .container-contatti {
@@ -575,6 +595,11 @@ background-color: rgba(0, 0, 0, 0.075);
 .container-contatti a{
   cursor: pointer;
   text-decoration: underline;
+  padding: 0;
+}
+
+.container-contatti p{
+  color: #17181b;
 }
 
 #contact {
