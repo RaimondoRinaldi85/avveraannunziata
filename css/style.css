@@ -216,7 +216,6 @@ background-color: rgba(0, 0, 0, 0.075);
     }
 }
 
-/*
 .banner{
     position: absolute;
     top: 25%;
@@ -232,27 +231,7 @@ background-color: rgba(0, 0, 0, 0.075);
     text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.4);
     opacity: 0;
     animation: moveBanner 1s .5s forwards;
-} */
-
-.banner{
-  position: absolute;
-  top: 25%;
-  left: 15%;
-}
-
-.banner h1{
-  font-size: 7rem;
-  font-weight: 400;
-  color: white;
-  width: 100%;
-  letter-spacing: .2rem;
-  text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.4);
-  opacity: 0;
-  animation: moveBanner 1s .5s forwards;
-}
-
-
-
+} 
 
 .banner p{
     font-size: 2rem;
