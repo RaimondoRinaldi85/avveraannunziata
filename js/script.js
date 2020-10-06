@@ -22,8 +22,7 @@ burger.addEventListener('click', () => {
 
 
 
-
-
+/* modal1 */
 
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
@@ -104,3 +103,4 @@ function closeModal(modal2) {
     modal2.classList.remove('active')
     overlay.classList.remove('active')
 }
+
