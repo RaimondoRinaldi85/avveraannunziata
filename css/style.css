@@ -243,12 +243,13 @@ background-color: rgba(0, 0, 0, 0.075);
 }
 
 .banner button {
-    width: 20rem;
-    height: 7rem;
-    background-image: url(../img/gradienteavvera.svg);
-    background-size: cover;
-    color: white;
-    border: none;
+  cursor:pointer;
+    border:none;
+    background: url(../img/gradienteavvera.svg);
+    color:#FFF;
+    margin:2.5rem 0 5px;
+    padding:1.5rem 3rem;
+    font-size:15px;
     margin-right: 2rem;
     font-size: 2rem;
     text-transform: uppercase;
@@ -258,6 +259,12 @@ background-color: rgba(0, 0, 0, 0.075);
     border-radius: .5rem;
     opacity: 0;
     animation: moveBanner 1s 1s forwards;
+}
+.banner button:hover {
+    background:rgb(0, 0, 0);
+	  -webkit-transition:background 0.2s ease-in;
+	  -moz-transition:background 0.1s ease-in;
+	  transition:background-color 0.1s ease-in;
 }
 
 
@@ -550,14 +557,19 @@ fieldset {
     padding: 0 5rem 7rem 5rem;
     color: rgb(0, 0, 0);
   }
+
+  .trasparenza h1{
+    color: rebeccapurple;
+  }
+
   .trasparenza button{
     cursor:pointer;
     border:none;
     background: url(../img/gradienteavvera.svg);
     color:#FFF;
-    margin:2.5rem 0 5px;
-    padding:10px;
-    font-size:15px;
+    margin-top: 4rem;
+    padding:1rem;
+    font-size:2rem;
   }
 
   .trasparenza button:hover{
