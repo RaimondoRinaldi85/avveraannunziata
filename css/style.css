@@ -15,7 +15,6 @@
 html{
     font-size: 62.5%;
     overflow-x: hidden;
-    
 }
 
 .container{
@@ -23,7 +22,6 @@ html{
   padding: 0;
   background-image: url(../img/html.png);
   background-size: cover;
- 
 }
 
 hr{
@@ -61,7 +59,6 @@ hr{
   height: .3rem;
   background-image:url(../img/gradienteavvera.svg);
 }
-
 
 /*nav*/
 nav {
@@ -548,6 +545,32 @@ fieldset {
 	border:1px solid #999;
 }
   /*end contatti */
+  /* trasparenza Avvera*/
+  .trasparenza{
+    padding: 0 5rem 7rem 5rem;
+    color: rgb(0, 0, 0);
+  }
+  .trasparenza button{
+    cursor:pointer;
+    border:none;
+    background: url(../img/gradienteavvera.svg);
+    color:#FFF;
+    margin:2.5rem 0 5px;
+    padding:10px;
+    font-size:15px;
+  }
+
+  .trasparenza button:hover{
+    background:rgba(0, 0, 0, 0.822);
+	  -webkit-transition:background 0.3s ease-in-out;
+	  -moz-transition:background 0.3s ease-in-out;
+	  transition:background-color 0.3s ease-in-out;
+  }
+
+  .trasparenza a{
+   color: white;
+  }
+  /* end trasparenza Avvera*/
   /* footer */
   .footer {
     width: 100%;
@@ -555,6 +578,7 @@ fieldset {
     display: flex;
     color: black;
     height: 100%;
+    border-top: rebeccapurple 2px solid;
   }
   
   .footer-content {
@@ -606,8 +630,6 @@ fieldset {
     color: black;
   }
   /* end footer */
-
-  
   .scroll-btn {
     position: fixed;
     right: 5rem;
@@ -624,15 +646,7 @@ fieldset {
     border-radius: 0.3rem;
     
   }
-  
-
-
-
-
-
-
   /* -----------------------media----------------------- */
-
   @media (max-width: 1500px) {
    
      .contact-wrapper {
@@ -909,12 +923,7 @@ fieldset {
       opacity: 1;
   }
 }
-
-
-
-
 /* Modal Privacy*/
-
 .modal {
   position: fixed;
   top: 50%;
@@ -989,10 +998,6 @@ fieldset {
   pointer-events: all;
 }
 
-
-
-
-
 .modal2 {
   position: fixed;
   top: 50%;
@@ -1047,107 +1052,4 @@ fieldset {
   color: white;
   font-size: 4rem;
  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
