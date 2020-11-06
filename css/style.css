@@ -644,7 +644,7 @@ fieldset {
   /* end footer */
   .scroll-btn {
     position: fixed;
-    right: 5rem;
+    right: 3rem;
     bottom: 5rem;
     width: 4.5rem;
     height: 4.5rem;
@@ -660,7 +660,7 @@ fieldset {
   }
   .fixed-act-btn {
     position: fixed;
-    left: 5rem;
+    left: 3rem;
     bottom: 5rem;
     width: 4.5rem;
     height: 4.5rem;
